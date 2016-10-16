@@ -1,5 +1,10 @@
-.DS_Store
+# project
 _site
 .sass-cache
-.npm-debug.log
-Gemfile.lock
+.vagrant
+
+# general
+.DS_Store
+.idea/
+Thumbs.db
+ehthumbs.db
