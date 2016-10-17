@@ -2,7 +2,12 @@
 layout: page
 title: About me
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<style>
+    .img-circle {
+        border-radius: 50%;
+    }
+</style>
+<img class="img-circle" src="../assets/images/profile.png">
 
 I'm an iOS developer and new technology enthusiast. Beyond programming I like workouts and keep my body in shape.
 
