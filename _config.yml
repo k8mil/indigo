@@ -11,7 +11,8 @@ description: My thoughts and tips about programming
 external-image: false
 picture: assets/images/profile.png
 
-url: https://wysockikamil.com   
+url: https://wysockikamil.com
+enforce_ssl: wysockikamil.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
