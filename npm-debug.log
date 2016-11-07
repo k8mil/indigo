@@ -2,44 +2,26 @@
 1 verbose cli [ '/usr/local/Cellar/node/5.0.0/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'serve' ]
+1 verbose cli   'server' ]
 2 info using npm@3.3.9
 3 info using node@v5.0.0
-4 verbose run-script [ 'preserve', 'serve', 'postserve' ]
-5 info lifecycle indigo@1.0.0~preserve: indigo@1.0.0
-6 silly lifecycle indigo@1.0.0~preserve: no script for preserve, continuing
-7 info lifecycle indigo@1.0.0~serve: indigo@1.0.0
-8 verbose lifecycle indigo@1.0.0~serve: unsafe-perm in lifecycle true
-9 verbose lifecycle indigo@1.0.0~serve: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/kamilwysocki/Desktop/indigo-gh-pages/node_modules/.bin:/Users/kamilwysocki/.rvm/gems/ruby-2.2.1/bin:/Users/kamilwysocki/.rvm/gems/ruby-2.2.1@global/bin:/Users/kamilwysocki/.rvm/rubies/ruby-2.2.1/bin:/Users/kamilwysocki/.rbenv/shims:/Users/kamilwysocki/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kamilwysocki/.rvm/bin
-10 verbose lifecycle indigo@1.0.0~serve: CWD: /Users/kamilwysocki/Desktop/indigo-gh-pages
-11 silly lifecycle indigo@1.0.0~serve: Args: [ '-c', 'bundle exec jekyll serve' ]
-12 silly lifecycle indigo@1.0.0~serve: Returned: code: 1  signal: null
-13 info lifecycle indigo@1.0.0~serve: Failed to exec serve script
-14 verbose stack Error: indigo@1.0.0 serve: `bundle exec jekyll serve`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
-14 verbose stack     at emitTwo (events.js:87:13)
-14 verbose stack     at EventEmitter.emit (events.js:172:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:87:13)
-14 verbose stack     at ChildProcess.emit (events.js:172:7)
-14 verbose stack     at maybeClose (internal/child_process.js:818:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-15 verbose pkgid indigo@1.0.0
-16 verbose cwd /Users/kamilwysocki/Desktop/indigo-gh-pages
-17 error Darwin 15.6.0
-18 error argv "/usr/local/Cellar/node/5.0.0/bin/node" "/usr/local/bin/npm" "run" "serve"
-19 error node v5.0.0
-20 error npm  v3.3.9
-21 error code ELIFECYCLE
-22 error indigo@1.0.0 serve: `bundle exec jekyll serve`
-22 error Exit status 1
-23 error Failed at the indigo@1.0.0 serve script 'bundle exec jekyll serve'.
-23 error This is most likely a problem with the indigo package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     bundle exec jekyll serve
-23 error You can get their info via:
-23 error     npm owner ls indigo
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 verbose stack Error: missing script: server
+4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:148:19)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:58:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
+4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
+4 verbose stack     at tryToString (fs.js:414:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
+5 verbose cwd /Users/kamilwysocki/Desktop/k8mil.github.io
+6 error Darwin 15.6.0
+7 error argv "/usr/local/Cellar/node/5.0.0/bin/node" "/usr/local/bin/npm" "run" "server"
+8 error node v5.0.0
+9 error npm  v3.3.9
+10 error missing script: server
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
