@@ -166,7 +166,8 @@ After that steps, the edited response goes to our device/simulator.
 
 # Conclusion
 
-Charles app is a great tool and have many many features. In my post I described the common usage which I do. Moreover I think it's must-have app for every developer that works with some API.
+Charles app is a great tool and have many many features. In my post I focused on the iOS environment, but you can also configure the proxy for your Android Emulator or Android device.
+I described most common usa which I do with Charles app. To sum up I think that app should take a place in your development tools directory if you work with some web server.
 
 
 
