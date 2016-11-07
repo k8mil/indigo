@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make your development better. Use the proxy.
-date: 2016-10-16 10:00
+date: 2016-11-08 00:30
 blog: true
 star: false
 author: kwysocki
