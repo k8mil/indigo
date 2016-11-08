@@ -15,12 +15,12 @@ tag:
 
 ![](/assets/posts/charles/head.jpeg)
 
-In this post, I would like to describe you to set up a proxy using Charles desktop app. I believe that many of you work with API or consume some REST Service. If you don't hear about proxy before I believe the knowledge from this post will be useful in your future development. 
+In this post, I would like to describe you to set up a proxy using Charles desktop app. I believe that many of you work with API or consume some REST Service. If haven't heard about proxy yet I believe the knowledge from this post will be useful in your future development. 
 The following example concerns an iOS environment and configuring at the OSX system. 
 
 # What the proxy is?
 
-To tell you what the Proxy is I use the definition that I found on Charles in [documentation](https://www.charlesproxy.com/documentation/additional/http-proxy/)
+To tell you what the Proxy is I use the definition that I found in Charles [documentation](https://www.charlesproxy.com/documentation/additional/http-proxy/)
 >An HTTP Proxy is a server that receives requests from your web browser and then makes the request to the Internet on your behalf. It then returns the results to your browser.
 
 So the Charles app is kind of monitor that inspects your network traffic, does all requests on your behalf and returns response back to you.
