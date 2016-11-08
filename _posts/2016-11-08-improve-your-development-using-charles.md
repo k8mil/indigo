@@ -72,11 +72,8 @@ After the installation process, you will be able to see all request from your iO
 
 # Ok, all configured but, how to use it?
 
-After the configuration flow, you will see the Charles main window, and your network movement. On the purposes of this post I wrote a simple app that consume free rest API `https://www.freegeoip.net/`. This API could give us some geo-information about any domain. For example: 
-
-```https://www.freegeoip.net/json/github.com``` 
-
-returns geo-information about `github.com` site.
+After the configuration flow, you will see the Charles main window, and your network data. For the purposes of this post I wrote a simple app that consume free rest API `https://www.freegeoip.net/`. This API gives us some geo-information about any domain. For example:  
+https://www.freegeoip.net/json/github.com returns geo-information about `github.com` site.
 
 Now, let's call `https://www.freegeoip.net/json/twitter.com` from iOS Simulator/iPhone. On Charles main window, we're able too see the request was made and we received a response. There is no information about request parameters, response code, etc.
 
@@ -96,7 +93,7 @@ Ok, let's have look on the request and response
 
 ![](/assets/posts/charles/response_non_readable.png)
 
-Unfortunately, it's non readable. It's all because the request is secure and use the `https`. So, we need to inform the Charles about this domain is using the `SSL` to see the request details.
+Unfortunately, it's non readable. It's all because the request is secure and uses the `https`. So, we need to inform Charles about that this domain is using the `SSL` to see the request details.
 
 ***Adding Proxy SSL***
 
@@ -106,7 +103,7 @@ First you can click on the `Proxy settings`, then click `Add` the append host to
 
 ![](/assets/posts/charles/add_proxy_settings.png)
 
-In the port field type `443`. Why `443` ? Because the 443 is a port for using an HTTPS(SSL) connection.
+In the port field type `443`. Why `443` ? Because the `443` is the default port HTTPS connections use.
 
 ![](/assets/posts/charles/host_and_port.png)
 
@@ -116,13 +113,13 @@ After adding the host it should look like that :
 ![](/assets/posts/charles/after_adding.png)
 
 
-Second way is much simple, just right-click on the request and select the `Enable SSL Proxying`.
+Second way is much simpler, just right-click on the request and select the `Enable SSL Proxying`.
 
 ![](/assets/posts/charles/enable_proxy_settings.png)
 
 ***Request using SSL Proxying***
 
-After adding the SSL Proxying for our host server, do request again.
+After adding the SSL Proxying for our host server, perform request again.
 
 ![](/assets/posts/charles/ssl_request_screen.png)
 
@@ -144,7 +141,7 @@ And now the most important - response body:
 
 ![](/assets/posts/charles/havefun_mem.jpg)
 
-The cool think about Charles is that the app allows you to debug the requests/responses in the same way as XCode and many others IDEs breakpoints works. But here you put the breakepoint on the request, not on the line of code.
+The cool thing about Charles is that the app allows you to debug the requests/responses in the same way as XCode and many others IDEs breakpoints work. But here you put the breakepoint on the request, not on the line of code.
 
 To set a breakpoint, just right-click on the line with the request that you want to debug and select `Breakpoints` option.
  
@@ -152,22 +149,22 @@ To set a breakpoint, just right-click on the line with the request that you want
 
 Now, make the request again and you should see the Breakpoint-Window.
  
-With the `Overview` and `Edit Request` tabs. Here you're able to edit the request body, link parameters, request method, cookies, headers or even choose the HTTP version. After editing the request just click `Execute` on the bottom.
+With the `Overview` and `Edit Request` tabs. Here you're able to edit the request body, query string parameters, request method, cookies, headers or even choose the HTTP version. After editing the request just click `Execute` on the bottom.
 
-After executing when the Charles receive the response we should see the Breakpoint-Window again and now we're ready to edit the response! 
+After executing when the Charles receives the response we should see the Breakpoint-Window again and now we're ready to edit the response! 
 
 ![](/assets/posts/charles/edit_response.png)
 
 By editing the response I mean that you can edit Response Headers and Response Body. Also you can check the body and the overview of the request. After editing the response, just click the Execute button.
 After that steps, the edited response goes to our device/simulator. 
 
->Note: Remember to set the breakpoint off, when you don't need it anymore because if you don't this the breakpoint will run in every time that request was triggered. 
+>Note: Remember to set the breakpoint off, when you don't need it anymore because if you don't this the breakpoint will run every time that request was triggered. 
 
 
 # Conclusion
 
-Charles app is a great tool and have many many features. In my post I focused on the iOS environment, but you can also configure the proxy for your Android Emulator or Android device.
-I described most common usa which I do with Charles app. To sum up I think that app should take a place in your development tools directory if you work with some web server.
+Charles app is a great tool and has many many features. In my post I focused on the iOS environment, but you can also configure the proxy for your Android Emulator or Android device.
+I described most common usages which I do with Charles app. To sum up I think that app should take a place in your development tools directory if you work with some web server.
 
 
 
