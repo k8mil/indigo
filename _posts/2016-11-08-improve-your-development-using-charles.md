@@ -20,22 +20,22 @@ The following example concerns an iOS environment and configuring at the OSX sys
 
 # What the proxy is?
 
-To tell you what the Proxy is I use the definition that I found on Charles [documentation](https://www.charlesproxy.com/documentation/additional/http-proxy/)
+To tell you what the Proxy is I use the definition that I found on Charles in [documentation](https://www.charlesproxy.com/documentation/additional/http-proxy/)
 >An HTTP Proxy is a server that receives requests from your web browser and then makes the request to the Internet on your behalf. It then returns the results to your browser.
 
-So the Charles app is kind of the monitor that monitors your network movement, do all requests on your behalf and returns the response back to you.
+So the Charles app is kind of monitor that inspects your network traffic, does all requests on your behalf and returns response back to you.
 
 # Do I really need it?
 
-Yes! It might help you when you're creating an app that consume some API. You'll be able to look throught the request and response from the server. Also, Charles app allows you to set a break point for endpoint and gives you ability to edit a request or response body, so you can test a various scenarios for you app. Likewise you can see how many request your app really do.
+Yes! It might help you when you're creating an app that consumes some API. You'll be able to look throught the request and response from the server. Also, Charles app allows you to set a break point for endpoint and gives you ability to edit a request or response body, so you can test a various scenarios for your app. Likewise you can see how many request your app really does.
 
 # How to configure Charles?
 
-First, go on [Charles website](https://www.charlesproxy.com/download/) and download the installation file. After the installation process you will see the main screen of the app. At start I recommend to select the `Sequence` tab on the top. 
+First, go to [Charles website](https://www.charlesproxy.com/download/) and download the installation file. After the installation process you will see the main screen of the app. At start I recommend to select the `Sequence` tab on the top. 
 
 ![](/assets/posts/charles/main_screen.png)
 
-After some time you should see all request that your do on your mac.
+After some time you should see all request that you do on your mac.
 Now, we have two ways to configure the Charles. First way is to configure it for iOS Simulator. The second option is configure Charles for iOS device.
 
 ***iOS Simluator configuration***
@@ -58,7 +58,7 @@ On your device in Wi-Fi connection settings choose the same connection that your
 
 ![](/assets/posts/charles/proxy_iphone.png)
 
-In the IP field please put the same IP address that your Mac Wi-Fi use. In the `port` field type `8888`. 
+In the IP field please put the same IP address that your Mac Wi-Fi uses. In the `port` field type `8888`. 
 
 To see IP-address of your Wi-Fi on your Mac:
  
