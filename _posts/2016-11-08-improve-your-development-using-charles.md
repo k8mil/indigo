@@ -77,7 +77,7 @@ https://www.freegeoip.net/json/github.com returns geo-information about `github.
 
 Now, let's call `https://www.freegeoip.net/json/twitter.com` from iOS Simulator/iPhone. On Charles main window, we're able too see the request was made and we received a response. There is no information about request parameters, response code, etc.
 
-![](https://github.com/k8mil/k8mil.github.io/blob/master/assets/posts/charles/call.png)
+![](https://github.com/k8mil/k8mil.github.io/blob/master/assets/posts/charles/call.png?raw=true)
 
 Let's take a look on that.
 
@@ -166,7 +166,7 @@ After that steps, the edited response goes to our device/simulator.
 Charles app is a great tool and has many many features. In my post I focused on the iOS environment, but you can also configure the proxy for your Android Emulator or Android device.
 I described most common usages which I do with Charles app. To sum up I think that app should take a place in your development tools directory if you work with some web server.
 
-
+*This post is cross-posted with my company [blog](http://blog.brightinventions.pl/improve-your-development-using-charles/)*
 
 
 
