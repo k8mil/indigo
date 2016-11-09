@@ -93,7 +93,7 @@ Ok, let's have look on the request and response
 
 ![](https://github.com/k8mil/k8mil.github.io/blob/master/assets/posts/charles/response_non_readable.png?raw=true)
 
-Unfortunately, it's non readable. It's all because the request is secure and uses the `https`. So, we need to inform Charles about that this domain is using the `SSL` to see the request details.
+Unfortunately, both are not readable for Charles. It's all because the request is secure and uses the `https`. So, we need to inform Charles about that this domain is using the `SSL` to see the request details.
 
 ***Adding Proxy SSL***
 
