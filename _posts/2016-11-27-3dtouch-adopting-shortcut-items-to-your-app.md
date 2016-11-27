@@ -10,6 +10,7 @@ tag:
 - swift
 - iOS
 - programming
+- 3d touch
 ---
 
 With the beginning of the iPhone 6s Apple has introduced an 3D Touch mechanism which is very cool thing. The 3D Touch is also available on
