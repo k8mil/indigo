@@ -19,7 +19,7 @@ to improve your app using the one of the three main features of 3D Touch.
 
 
 ![](https://static.pexels.com/photos/50603/iphone-6-apple-ios-iphone-50603.jpeg)
-# Modify your `Info.plist` file
+# Modify your Info.plist file
 
 1. Add to your  `Info.plist` file a special key called `UIApplicationShortcutItems`. It should be array.
 
@@ -56,19 +56,19 @@ to improve your app using the one of the three main features of 3D Touch.
 <array>
 	<dict>
 		<key>UIApplicationShortcutItemType</key>
-		<string>shortcut-add</string>
+		<string>app.some_another_action</string>
 		<key>UIApplicationShortcutItemTitle</key>
-		<string>Title for custom icon</string>
+		<string>Title with custom icon</string>
 		<key>UIApplicationShortcutItemIconFile</key>
-		<string>Apple-35</string>
+		<string>apple-35</string>
 	</dict>
 	<dict>
 		<key>UIApplicationShortcutItemType</key>
-		<string>shortcut-custom-icon</string>
+		<string>app.some_action</string>
 		<key>UIApplicationShortcutItemIconType</key>
 		<string>UIApplicationShortcutIconTypeAdd</string>
 		<key>UIApplicationShortcutItemTitle</key>
-		<string>Title for system Add icon</string>
+		<string>Title with system icon</string>
 	</dict>
 </array>
 ```
