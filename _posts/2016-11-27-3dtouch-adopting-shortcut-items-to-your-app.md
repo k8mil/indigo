@@ -19,7 +19,8 @@ to improve your app using the one of the three main features of 3D Touch.
 
 
 ![](https://static.pexels.com/photos/50603/iphone-6-apple-ios-iphone-50603.jpeg)
-# Modify your Info.plist file
+
+#Modify your Info.plist file
 
 1. Add to your  `Info.plist` file a special key called `UIApplicationShortcutItems`. It should be an array.
 
