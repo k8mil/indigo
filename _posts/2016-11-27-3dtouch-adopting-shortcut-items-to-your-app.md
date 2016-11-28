@@ -18,7 +18,7 @@ the newest iPhones 7. Nothing indicates that in the future Apple devices will ru
 to improve your app using the one of the three main features of 3D Touch.
 
 
-![](https://static.pexels.com/photos/50603/iphone-6-apple-ios-iphone-50603.jpeg)
+![](https://github.com/k8mil/k8mil.github.io/blob/master/assets/posts/3dTouch/header.jpeg?raw=true)
 
 # Modify your Info.plist file
 
