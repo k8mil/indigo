@@ -13,17 +13,17 @@ tag:
 - 3d touch
 ---
 
-With the beginning of the iPhone 6s Apple has introduced an 3D Touch mechanism which is very cool thing. The 3D Touch is also available on
-the newest iPhones 7. Nothing indicates that in the future Apple devices runs out of that feature so, here it's a quick tutorial how
+With the beginning of the iPhone 6s, Apple has introduced a 3D Touch mechanism which is very cool thing. The 3D Touch is also available on
+the newest iPhones 7. Nothing indicates that in the future Apple devices will run out of that feature so, here is a quick tutorial on how
 to improve your app using the one of the three main features of 3D Touch.
 
 
 ![](https://static.pexels.com/photos/50603/iphone-6-apple-ios-iphone-50603.jpeg)
 # Modify your Info.plist file
 
-1. Add to your  `Info.plist` file a special key called `UIApplicationShortcutItems`. It should be array.
+1. Add to your  `Info.plist` file a special key called `UIApplicationShortcutItems`. It should be an array.
 
-2. Add items to `UIApplicationShortcutItems` array. Items should be dictionary type.
+2. Add items to `UIApplicationShortcutItems` array. Items should be a dictionary type.
 
 3. Put info for each item.
 
@@ -38,8 +38,8 @@ to improve your app using the one of the three main features of 3D Touch.
 
 
   I will focus on the values that I set in my example app. The `UIApplicationShortcutItemType` is a string that delivers an information to your app about what type of shortcut was pressed.
-  `UIApplicationShortcutItemTitle` is that what user see when the shortcut is shown. `UIApplicationShortcutItemIconType` string that inform application what kind of ***system***  icon should be used for this shortcut.
-  And the last one is `UIApplicationShortcutItemIconFile` defining the icon name that should be shown when the shortcut appeared(instead of system icon).
+  `UIApplicationShortcutItemTitle` is what user sees when the shortcut is shown. `UIApplicationShortcutItemIconType` is a string that inform application what kind of ***system***  icon should be used for this shortcut.
+  And the last one is `UIApplicationShortcutItemIconFile` defining the icon name that should be shown when the shortcut appears(instead of system icon).
 
   > Important thing here is that you can use system ***or*** your custom icons. Apple recommends that the custom icon should be square, single color, and 35x35 points.
 
@@ -81,7 +81,7 @@ Below you can see the result of above implementation.
 
 # Application shortcut tap handling
 
-Ok, now move to `AppDelegate` class and let's deal with the application shortcut tap events.
+Ok, now move to `AppDelegate` class and let's deal with the application's shortcut tap events.
 
 #### 1.Override and implement `UIApplicationDelegate` method.
 
@@ -90,7 +90,7 @@ Let's focus on this method:
 func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Swift.Void)
 ```
 
-That method is called every time when the application shortcut was pressed. You don't have to worry about your application state. If your app is in background mode it just wakes up your app and trigger `performActionFor` method. But if the application is terminated the app cycle will be `didLauchWithOptions` and then `performActionFor shortcutItem` will be called.
+That method is called every time when the application shortcut is pressed. You don't have to worry about your application state. If your app is in background mode it just wakes up your app and triggers `performActionFor` method. But if the application is terminated the app cycle will be `didLauchWithOptions` and then `performActionFor shortcutItem` will be called.
 Of course, you can take the application shortcut in `didLauchWithOptions` method by:
 
 ```swift
