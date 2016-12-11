@@ -113,4 +113,6 @@ pretty nice, huh?
 I don't like the way about determining what view user touched. Checking a point and calculating location for that is not really nice. Maybe another, better way to implementing 3d touch mechanism for views could be: extending a `UIView` class by some property like `3dTouchGestureRecognizerDelegate` then implementing some methods like in `UIViewControllerPreviewingDelegate`. Then we don't have to check whether view was touched, because on the delegate methods the touched view could be passed as method parameter. Something familiar to `gestureRecognizer`. Maybe in future iOS updates the API will be changed?
 To sum up, `UIViewControllerPreviewing` allows us the create pretty nice features and I highly recommend to use that and make your application better!
 
+The whole implementation with example app you can find in my [GitHub repository](https://github.com/k8mil/3dTouchPeak-Pop) .
+
 Thanks for reading, and see you soon!
