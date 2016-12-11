@@ -13,7 +13,7 @@ tag:
 - 3d touch
 ---
 
-In my previous post I wrote about adopting UIApplicationShortcutItems in your app. Now it's time to implement Peak&Pop - a feature provided by 3d touch.
+In my previous post I wrote about adopting UIApplicationShortcutItems in your app. Now it's time to implement Peak&Pop - a feature provided by 3d Touch.
 
 ![](https://raw.githubusercontent.com/k8mil/k8mil.github.io/master/assets/posts/3dTouch/pexels-photo-59672.jpeg)
 
