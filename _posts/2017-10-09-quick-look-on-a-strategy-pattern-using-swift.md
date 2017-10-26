@@ -5,7 +5,7 @@ date: 2017-10-09 17:40
 blog: true
 star: false
 author: kwysocki
-description: Qucik look at Strategy Pattern using Swift
+description: Quick look at Strategy Pattern using Swift
 tag:
 - swift
 - iOS
