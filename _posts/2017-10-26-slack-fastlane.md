@@ -50,16 +50,16 @@ We use email service which is built-in into TeamCity. Every built lane has a rul
 Let's consider a simple example. One lane which compiles the project and runs the unit tests:
 
 
-```ruby
+```
 platform :ios do
-desc "Runs all the tests"
-lane :test do
-   begin
-       test_lane()
-   rescue => exception
-       on_error(exception)
-   end
-end
+    desc "Runs all the tests"
+    lane :test do
+        begin
+            test_lane()
+        rescue => exception
+            on_error(exception)
+        end
+    end
 end
 ```
 
