@@ -13,7 +13,6 @@ picture: assets/images/profile.png
 
 url: https://wysockikamil.com
 enforce_ssl: wysockikamil.com
-# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
@@ -31,9 +30,9 @@ analytics-google: UA-75919010-1
 # disqus: mydisqus
 
 # if you don't have any of social below, comment the line
-twitter: _k8mil
+twitter: kamwysoc
 stackoverflow: 5433235
-github: k8mil
+github: kamwysoc
 email: kamil.wysocki93@gmail.com
 linkedin: kamil-wysocki-22a67aa5
 # facebook: myfacebook
@@ -42,7 +41,7 @@ linkedin: kamil-wysocki-22a67aa5
 # pinterest: mypinterest
 # youtube: myyoutube
 # spotify: myspotify
-medium: '_k8mil'
+medium: 'kamwysoc'
 # vimeo: myvimeo
 
 authors:
@@ -51,7 +50,7 @@ authors:
         bio: iOS developer, programmer
         external-image: false
         picture: assets/images/profile.png
-        twitter: _k8mil
+        twitter: kamwysoc
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
