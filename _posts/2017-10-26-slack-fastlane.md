@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Slack + Fastlane = ❤️. Talk about one of puzzles of Continous Integration.'
+title: 'Slack + Fastlane = ❤️. Talk about one of puzzles of Continuous Integration.'
 author: kwysocki
 date: 2017-10-26 17:40
 blog: true
@@ -342,7 +342,7 @@ Below you can find all links that were used in this post.
 
 👉  [Fastlane Slack action](https://docs.fastlane.tools/actions/slack/)
 
-👉  [Continous Integration](https://www.google.com/search?q=continuous+integration)
+👉  [Continuous Integration](https://www.google.com/search?q=continuous+integration)
 
 👉  [TeamCity](https://www.jetbrains.com/teamcity/)
 
