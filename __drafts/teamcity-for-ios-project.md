@@ -17,7 +17,7 @@ Hope you will like it!
 Firstly, you need to go to page where your TeamCity is hosted. After log-in, go to the Administration Page, click `Projects` tab in `Project-related Settings` section and click `Create project`
 
 ![project settings](./teamcity-for-ios-project/create_project_step1.png)
-
+ 
 after that you should see configuration screen for Version Control that is used in your project.
 
 ![create project version control](./teamcity-for-ios-project/create_project.png)
@@ -40,15 +40,71 @@ I this post I will show you how to configure it with upload SSH key.
 
 ### Generate new SSH key
 
+*If you haven't heard about generating SSH keys, or you don't know what SSH keys really are. Check [this link](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)*
+
 To generate new SSH keys you can use terminal command:
 
 ```
 ssh-keygen -t rsa
 ```
 
+provide a name for new key, and optional passphrase, then in directory in which you ran `ssh-keygen -t rsa` command you should see two keys. One public with `.pub` extension, and second - private.
+The public one will be used in your repository on github/bitbucket. The private key will be used in TeamCity service. 
+
+### Use generated key in TeamCity
+
+Go to already created project, settings page and click `VCS SSH Keys` tab.
+
+![ssh section in TeamCity](./teamcity-for-ios-project/ssh_section.png)
 
 
-So, go to already created project, settings and click `VCS Roots` tab.
+Click on `Upload SSH Key`. After that you should see a pop-up window which allows you to upload the previously created SSH Key.
+*Please keep in mind to upload a private part of your key, without `pub` extension*. If you choose correctly, click save and you should see screen like this:
 
-![create project version control](./teamcity-for-ios-project/vcs_root_section.png)
+
+![uploaded ssh key](./teamcity-for-ios-project/ssh_uploaded_key.png)
+
+As you can see in `Usage` tab, the key is not used in the configuration yet.
+In order to use it - you have to go through the next steps...
+
+
+### Configure VCS root
+
+Go to already created project, settings page and click `VCS Roots` tab.
+
+![create project version control](./teamcity-for-ios-project/vcs_root_section.png) // CHANGE IMAGE. SHOW SSH Keys(1) and say something about it
+
+//
+
+
+## Step 3: Create build configuration
+create manually, attach root
+## Step 4: Configure build steps for configuration
+add 2 steps, install dependencies, run fastalne, 
+## Step 5: Triggers
+VCS trigger, scheduled trigger and say something more about it
+## Step 6: Failuire Conditions
+60 minutes failuire conditions, and some more
+## Step 7: Build Features
+XML Report - unit tests, Rvm 
+## Step 8: Parameters
+fastlane password, match password, xcodepath, build number
+## Step 9: Agent machine
+How to configure agent?
+Link to Team City docs,
+Go to Agents -> Install via ZIP
+Authorize agent
+## Step 10: Setup Agent requirements for build configuration
+select by jvm.os.name = MAC Os
+## Step 11: Ready for build - RUN!
+show screen with progress, build log, with all steps
+## Step 12: Artifacts!
+screen, path, text abut it
+
+
+
+
+
+
+
 
