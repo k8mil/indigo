@@ -1,6 +1,6 @@
 Hi! Today topic will be about [TeamCity](https://www.jetbrains.com/teamcity/) and how to provide continous integration in your iOS project.
 
-## Motivation
+# Motivation
 
 I configured a TeamCity many times and for many projects. There are many adventages of using Continous Integration system in your project development process. Also, there is a lot of alternatives to TeamCity like [CircleCI](https://circleci.com/), [TravisCI](https://travis-ci.org/) and many more. But in this post I want to share with you with experience that I gained in [Bright Inventions](https://brightinventions.pl) with TeamCity.
 
