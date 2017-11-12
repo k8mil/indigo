@@ -364,4 +364,4 @@ Also, if you will configure Artifacts in build configuration, you can easily sen
 
 Hope you like the post. Feel free to share :)
 
-This post was primarly posted on my company [blog](https://brightinventions.pl/blog/slack-fastlane/)
+This post was primarly posted on my company [blog](https://brightinventions.pl/blog/teamcity-for-ios-project/)
