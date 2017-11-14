@@ -18,7 +18,7 @@ the newest iPhones 7. Nothing indicates that in the future Apple devices will ru
 to improve your app using the one of the three main features of 3D Touch.
 
 
-![](https://github.com/k8mil/k8mil.github.io/blob/master/assets/posts/3dTouch/header.jpeg?raw=true)
+![](https://github.com/kamwysoc/kamwysoc.github.io/blob/master/assets/posts/3dTouch/header.jpeg?raw=true)
 
 # Modify your Info.plist file
 
@@ -48,7 +48,7 @@ to improve your app using the one of the three main features of 3D Touch.
 
   The configured `Info.plist` could look like that:
 
-  ![](https://raw.githubusercontent.com/k8mil/k8mil.github.io/master/assets/posts/3dTouch/info-plist.png)
+  ![](https://raw.githubusercontent.com/kamwysoc/kamwysoc.github.io/master/assets/posts/3dTouch/info-plist.png)
 
   and by code:
 
@@ -78,7 +78,7 @@ to improve your app using the one of the three main features of 3D Touch.
 
 Below you can see the result of above implementation.
 
-![](https://raw.githubusercontent.com/k8mil/k8mil.github.io/master/assets/posts/3dTouch/custom_system_icon.gif)
+![](https://raw.githubusercontent.com/kamwysoc/kamwysoc.github.io/master/assets/posts/3dTouch/custom_system_icon.gif)
 
 # Application shortcut tap handling
 
@@ -147,7 +147,7 @@ private func handleShortcut(_ item: UIApplicationShortcutItem) {
 
 The effect of implementation will look like this:
 
-![](https://raw.githubusercontent.com/k8mil/k8mil.github.io/master/assets/posts/3dTouch/working_app.gif)
+![](https://raw.githubusercontent.com/kamwysoc/kamwysoc.github.io/master/assets/posts/3dTouch/working_app.gif)
 
 As you can see above I create two quick actions with custom icon, title and subtitle.
 
@@ -179,4 +179,4 @@ if let shortcutItem = UIApplication.sharedApplication().shortcutItems?.filter({ 
 
 The 3D Touch is powerful feature and makes iOS apps very nice to use. Interesting fact is that from the iOS 10 all apps available on AppStore have predefined `Share App` shortcut. It allows us to share the applications without opening them. In my future posts I will describe more features that 3d touch gives us. So, thanks for reading and see you next time!
 
-![](https://raw.githubusercontent.com/k8mil/k8mil.github.io/master/assets/posts/3dTouch/share_app.gif)
+![](https://raw.githubusercontent.com/kamwysoc/kamwysoc.github.io/master/assets/posts/3dTouch/share_app.gif)

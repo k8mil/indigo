@@ -21,15 +21,15 @@ Hello, today I want to share with you my first created pod.
 
 It is called ContactCircularView and it allows you to create circular views with some text or image inside in an easy way.
 
-Main inspiration to create it was a Circles (as you can see below) in iOS Contact application. 
- 
- 
+Main inspiration to create it was a Circles (as you can see below) in iOS Contact application.
+
+
 ![](/assets/posts/contact.png)
 <font size="1">iPhone Simulator screen shot from iOS Contacts app</font>
 
 More information about my pod you can get via link to my Github :
 
-[GitHub](https://github.com/k8mil/ContactCircularView)
+[GitHub](https://github.com/kamwysoc/ContactCircularView)
 
 or Cocoapods site :
 
