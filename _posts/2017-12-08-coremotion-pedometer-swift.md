@@ -3,7 +3,8 @@ layout: post
 title: 'Implementing a simple pedometer using Swift'
 author: kwysocki
 date: 2017-12-08 17:00
-star: false
+blog: true
+start: false
 tag: 
 - iOS 
 - Swift

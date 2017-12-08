@@ -4,7 +4,7 @@ title: 'Design Patterns with Swift: Facade pattern'
 author: kwysocki
 date: 2017-11-16 00:40
 blog: true
-star: false
+start: false
 tag:
 - Swift
 - iOS
