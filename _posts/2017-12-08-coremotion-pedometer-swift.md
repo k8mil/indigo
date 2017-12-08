@@ -151,4 +151,7 @@ private func startUpdating() {
 CoreMotion is a powerful framework and besides a pedometer it allows you to work with a plenty useful data from accelerometer and gyroscope as well
 You can find an example project at [Github repository](https://github.com/bright/Pedometer-Swift)
 
-Hope you like the post, feel free to share and comment.
+Hope you like the post, feel free to share.
+
+
+This post was primarly posted on my company [blog](https://brightinventions.pl/blog/coremotion-pedometer-swift/)

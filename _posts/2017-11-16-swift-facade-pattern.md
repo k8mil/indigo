@@ -134,3 +134,5 @@ do {
 Please notice that our facade covers logic associated with `Data` providing and creating a valid `URL` for file destination. And because of that, it is super easy to save `UIImage` as `PNG` or `JPEG` using our `ImageSaverFacade`. Only thing to do is to pass the correct parameters to facade method.
 
 Facade design pattern can be used in many cases. Facade creates for you a simple gateway to a complicated system. By using it you will definitely make your code simpler to understand and read.
+
+This post was primarly posted on my company [blog](https://brightinventions.pl/blog/swift-facade-pattern/)
