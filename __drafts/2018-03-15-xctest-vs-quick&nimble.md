@@ -44,10 +44,134 @@ expect(ocean.isClean).toEventually(beTruthy())
 
 More about `Nimble` you can find [here](https://github.com/Quick/Nimble).
 
-## Describe scenario Bank
+# Compare methods signatures (XCTestEqual, expect, beforeEach vs setUp)
 
-## Compare methods signatures (XCTestEqual, expect, beforeEach vs setUp)
+# Describe scenario Bank
 
-## Compare example MoneyTransfert
+The scenario that I choosed to compare those two frameworks is a simple Bank functionalitly. Let's imagine that we have super `SafeBank` in which we can create account for Customer, transfer moneys or print some basic information about the bank customer.
 
-## Conclusions write test for people
+Here you have API for `SuperSafeBank` class.
+
+```swift
+    func createAccount(for client: Person, initialBalance: Int = 0) throws
+    func hasAccount(_ owner: Person) -> Bool 
+    func accountInfo(owner: Person) throws -> String
+    func accountBalance(_ owner: Person) throws -> Int
+    func transfer(_ money: Int, from sender: Person, to receiver: Person, then completion: (() -> ())? = nil) throws {
+```
+
+
+# Comparing
+
+* ## Account creation tests
+
+### Quick & Nibmle
+
+```swift
+context("Account creation & Account Info") {
+    beforeEach {
+        john = Person(firstName: "John", lastName: "Smith")
+    }
+
+    it("No account created for John Smith.") {
+        expect(sut.hasAccount(john)).to(beFalse())
+    }
+
+    it("Create account for new client") {
+        expect { try! sut.createAccount(for: john, initialBalance: 200) }.toNot(throwError())
+    }
+
+    it("Create account and check if exist") {
+        try! sut.createAccount(for: john)
+        expect(sut.hasAccount(john)).to(beTrue())
+    }
+
+    it("Create account for existing client - should throw error") {
+        try! sut.createAccount(for: john)
+        expect {
+            try sut.createAccount(for: john)
+        }.to(throwError { (error) in
+            expect(error) == BankError.accountAlreadyExist
+        })
+    }
+}
+```
+
+### XCTest
+
+```swift
+func testNoAccountCreated() {
+    let john = Person(firstName: "John", lastName: "Smith")
+    XCTAssertFalse(sut.hasAccount(john), "No account created for John Smith.")
+}
+
+func testCreateAndCheckAccount() {
+    let john = Person(firstName: "John", lastName: "Smith")
+    try! sut.createAccount(for: john)
+    XCTAssertTrue(sut.hasAccount(john), "Create account for new client")
+}
+
+func testCreateAccountAndCheckIfExist() {
+    let nonBankClient = Person(firstName: "John", lastName: "Smith")
+    XCTAssertFalse(sut.hasAccount(nonBankClient), "Create account and check if exist")
+}
+
+func testCreateAccountForExistingClient() {
+    let john = Person(firstName: "John", lastName: "Smith")
+    try! sut.createAccount(for: john)
+
+    XCTAssertThrowsError(try sut.createAccount(for: john)) { (error) -> Void in
+        XCTAssertEqual(error as? BankError, BankError.accountAlreadyExist)
+    }
+}
+```
+
+
+* ## Money transfering tests asynchronous testing
+
+### Quick & Nimble
+
+```swift
+context("Money transfer") {
+    var john: Person!
+    var paul: Person!
+
+    beforeEach {
+        john = Person(firstName: "John", lastName: "Doe")
+        paul = Person(firstName: "Paul", lastName: "Smith")
+
+        try! sut.createAccount(for: john, initialBalance: 1000)
+        try! sut.createAccount(for: paul, initialBalance: 500)
+    }
+
+    it("Transfer 300 from John to Paul") {
+        try! sut.transfer(300, from: john, to: paul)
+
+        expect(try! sut.accountBalance(john)).toEventually(equal(700), timeout: 6)// transfer might last some time that's why timeout here
+        expect(try! sut.accountBalance(paul)).toEventually(equal(800), timeout: 6)// transfer might last some time that's why timeout here
+    }
+}
+```
+
+### XCTest
+
+```swift
+func testMoneyTransfer() {
+    let john = Person(firstName: "John", lastName: "Doe")
+    let paul = Person(firstName: "Paul", lastName: "Smith")
+    try! sut.createAccount(for: john, initialBalance: 1000)
+    try! sut.createAccount(for: paul, initialBalance: 500)
+
+    let expectation = XCTestExpectation(description: "Money transfer")
+
+    try! sut.transfer(300, from: john, to: paul, then: {
+        XCTAssertEqual(try! self.sut.accountBalance(john), 700, "Sender account balance")
+        XCTAssertEqual(try! self.sut.accountBalance(paul), 800, "Receiver account balance")
+        expectation.fulfill()
+    })
+    self.wait(for: [expectation], timeout: 6)
+}
+```
+
+
+# Conclusions write test for people
