@@ -40,6 +40,7 @@ in Swift 4.2 we can work with `CaseIterable` protocol which does all the work fo
 
 ```swift
 // CaseIterable protocol gave us a `allCases` variable, which is an array of all cases in the Enum.
+
 enum CarType : CaseIterable {
     case sedan
     case crossover
@@ -162,7 +163,7 @@ let shuffledNames = names.shuffled() // returns an array of names in shuffled or
 
 ## Conclusion
 
-It would be great to use those features in stable versions. My impressions from Xcode 10(beta) and Swift 4.2 was pretty amazing.
+It would be great to use those features in stable versions. My impressions from Xcode 10(beta) and Swift 4.2 was pretty amazing. I highly recommend you to watch What's new in Swift talk from WWDC 2018
 
 Below you can find a link to a GitHub gist with all features described above.
 
