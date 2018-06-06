@@ -13,11 +13,11 @@ tag:
 
 ![](/assets/posts/whatisnewinswift-mysummary/swift_image.png)
 
-I just have watched the What's new in Swift from WWDC 2018 and I thought it will be great motivation to write a blog post about this talk.
+I just have watched the What's new in Swift from WWDC 2018 and I thought it is a great motivation to write a blog post about this talk and summarize what I learned.
 
-Here are some new Swift 4.2 features that I really liked. 🤓
+And here are some new Swift 4.2 features that I really liked. 
 
-Hope you will enjoy!
+Hope you will enjoy! 🤓
 
 ## SE-0194 Derived Collection of Enum Cases 
 
