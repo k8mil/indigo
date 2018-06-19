@@ -128,7 +128,7 @@ In that approach, you should change the code that relates to the `hashValue` as 
 Swift 4.1 approach:
 
 ```swift
-let randomIntFrom1to10 = 1 + (arc4random() % 10) // return random number is the 1...6
+let randomIntFrom1to10 = 1 + (arc4random() % 10) // return random number is the 1...10
 ```
 
 But in Swift 4.2 there is no need to use `arc4random()` anymore. 🎉
