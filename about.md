@@ -6,13 +6,13 @@ title: About me
     .img-circle {
         border-radius: 50%;
     }
+    .centered { 
+        align: 'cetner';
+    }
 </style>
 <img class="img-circle" src="../assets/images/profile.png">
 
-I’m software developer in Gdansk, Poland. Mostly working with iOS but I’m open-minded for any other technologies, frameworks and challenges. Feel free to [follow me on twitter](https://twitter.com/kamwysoc) and read my personal blog.
+I’m software developer in Gdansk, Poland. Mostly working with iOS but I’m open-minded for any other technologies, frameworks and challenges.
 
-Currently I'm working with [great people](http://brightinventions.pl/team/) at [Bright Inventions](http://brightinventions.pl/).
+Feel free to [follow me on twitter](https://twitter.com/kamwysoc) and read my personal blog.
 
-### Contact me
-
-[kamil.wysocki93@gmail.com](mailto:kamil.wysocki93@gmail.com)
